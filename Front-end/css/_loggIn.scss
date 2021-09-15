@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    position: absolute;
+    z-index: -1;
+}
+
+#login{
+    position: relative;
+    width: 15em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    font-family:"Trirong", serif;
+    h1{
+        color: floralwhite;
+    }   
+}
+.logInp{
+    font-size: 0.9em;
+    padding: 5px;
+    font-family:monospace;
+}
+#logsub{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 0.8em;  
+}
+
+#logsub:hover{
+    cursor: pointer;
+    color:rgb(221, 158, 86);
+    background-color: white;
+}
+
+
+

@@ -1,0 +1,15 @@
+@import "loggIn";
+@import "mainPage";
+@import "viewNotes";
+@import "newNote";
+@import "lookAtNote";
+@import "deleted";
+
+body{
+    background-color: rgb(221, 158, 86);
+}
+
+button:hover{
+    cursor: pointer;
+    
+}

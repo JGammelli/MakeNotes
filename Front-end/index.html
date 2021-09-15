@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Loggin page</title>
+        <link href="/Front-end/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    </head>
+    <body>
+
+        <div id = "container">
+            <div id ="content">
+                <div id = "login" class="comm">
+                    <h1>Sign in</h1>
+                    <input id = "usr" class = logInp type = "text" placeholder="Username" required/> 
+                    <input id = "psw" class = logInp type = "password" placeholder="Password" required/>
+                    <input id = "logsub" type = "submit" value="Sign in"/>
+                    <p id="msg"></p>
+                </div>
+            </div>  
+            
+            <div id="mainPage">           
+                <div id = "logout">
+                    <button id = "outBtn">Sign out</button>
+                </div>
+                <div class="mainContainer">
+                    <div id="noteBtns">
+                        <button id="viewNote" class="noteClass">View notes</button>
+                        <button id="newNote" class="noteClass">Make new note</button>
+                    </div>
+                    <div><button id ="closeNotes">Back</button></div>
+
+                    <div id="overviewNote"></div>
+                    <div id="watchNote"></div>
+                    <!-- <div id = "editBtn"></div> -->
+    
+    
+                    <div id = "notes">
+                        <input id='noteName' placeholder="Note name"></input>
+                        <textarea id="textContent"></textarea>
+                        <button id="saveBtn" class="newNoteBtn">Save</button>
+                        <button id="closeWriting" class="newNoteBtn">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/Front-end/node_modules/tinymce/tinymce.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
+
+

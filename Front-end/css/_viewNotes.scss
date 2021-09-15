@@ -1,0 +1,62 @@
+
+#overviewNote{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80em;
+}
+
+.viewNoteBtn{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color:rgb(0, 0, 0);
+    background-color: white;
+    text-align: center;
+    transition: all 0.2s;
+    width: 8em;
+    height: 8em;
+    font-size: 1.5em;     
+}
+.viewNoteBtn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.644);
+    color: rgb(0, 0, 0);
+}
+
+//Back from viewing notes
+#closeNotes{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    color:rgb(221, 158, 86);
+    background-color: white;
+    font-size: 0.8em; 
+    position: absolute;
+    left: 85%;
+    top: 20%;
+    transform: translate(-85%, -20%);
+}
+
+#closeNotes:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}

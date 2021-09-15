@@ -1,0 +1,64 @@
+//Sign out button
+#outBtn{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    color:rgb(221, 158, 86);
+    background-color: white;
+    font-size: 1em;
+    margin: 1em;
+    
+    
+}
+
+#outBtn:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+#noteBtns{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 80em;
+}
+
+.noteClass{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgba(255, 255, 255, 0);
+    width: 12em;
+    height: 12em;
+    font-size: 2.5em; 
+    
+}
+
+.noteClass:hover{
+    cursor: pointer;
+    color:rgb(221, 158, 86);
+    background-color: white;
+}

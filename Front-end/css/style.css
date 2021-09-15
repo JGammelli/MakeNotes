@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  position: absolute;
+  z-index: -1;
+}
+
+#login {
+  position: relative;
+  width: 15em;
+  height: 20em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+  font-family: "Trirong", serif;
+}
+
+#login h1 {
+  color: floralwhite;
+}
+
+.logInp {
+  font-size: 0.9em;
+  padding: 5px;
+  font-family: monospace;
+}
+
+#logsub {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 0.8em;
+}
+
+#logsub:hover {
+  cursor: pointer;
+  color: #dd9e56;
+  background-color: white;
+}
+
+#outBtn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #dd9e56;
+  background-color: white;
+  font-size: 1em;
+  margin: 1em;
+}
+
+#outBtn:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#noteBtns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80em;
+}
+
+.noteClass {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0);
+  width: 12em;
+  height: 12em;
+  font-size: 2.5em;
+}
+
+.noteClass:hover {
+  cursor: pointer;
+  color: #dd9e56;
+  background-color: white;
+}
+
+#overviewNote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80em;
+}
+
+.viewNoteBtn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: white;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 8em;
+  height: 8em;
+  font-size: 1.5em;
+}
+
+.viewNoteBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.644);
+  color: black;
+}
+
+#closeNotes {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #dd9e56;
+  background-color: white;
+  font-size: 0.8em;
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  -webkit-transform: translate(-85%, -20%);
+          transform: translate(-85%, -20%);
+}
+
+#closeNotes:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+#noteName {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  padding: 5px;
+}
+
+#notes {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.12em;
+  position: absolute;
+  width: 70em;
+}
+
+#textContent {
+  height: 55em;
+}
+
+.newNoteBtn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: black;
+  background-color: white;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.newNoteBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+#lookNoteContainer {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 0.12em;
+  position: absolute;
+  width: 50em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60em;
+}
+
+#lookNoteName {
+  margin-bottom: 1em;
+  background-color: white;
+  border: 0.01em solid black;
+  border-radius: 0.12em;
+  width: 10em;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+#lookNoteContent {
+  background-color: white;
+  height: 20em;
+  border: 0.1em solid black;
+  border-radius: 0.12em;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.lookNoteBtn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid white;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: black;
+  background-color: white;
+  font-size: 0.8em;
+  margin-top: 1em;
+  margin-right: 1em;
+  border: 0.01em solid black;
+  border-radius: 0.12em;
+}
+
+.lookNoteBtn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+#watchNote {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.deleted {
+  color: white;
+  font-size: 2em;
+}
+
+body {
+  background-color: #dd9e56;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

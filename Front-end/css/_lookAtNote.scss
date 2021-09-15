@@ -1,0 +1,58 @@
+#lookNoteContainer{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.12em;
+    position: absolute;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    width: 60em;
+}
+
+#lookNoteName{
+    margin-bottom: 1em;
+    background-color: white;
+    border:0.01em solid rgb(0, 0, 0);
+    border-radius: 0.12em;
+    width: 10em;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#lookNoteContent{
+    background-color: white;
+    height: 20em;
+    border:0.1em solid rgb(0, 0, 0);
+    border-radius: 0.12em;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+
+.lookNoteBtn{
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid white;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    color:rgb(0, 0, 0);
+    background-color: white;
+    font-size: 0.8em; 
+    margin-top: 1em;
+    margin-right: 1em;
+    border:0.01em solid rgb(0, 0, 0);
+    border-radius: 0.12em;
+}
+
+.lookNoteBtn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    
+}
